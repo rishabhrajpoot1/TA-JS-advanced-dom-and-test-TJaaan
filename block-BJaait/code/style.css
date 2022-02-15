@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  background-color: black;
+  color: #ffffff;
+}
+
+main {
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time,
+.date {
+  display: inline-block;
+  margin: 0 2rem 1.25rem 2rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+
+.input {
+  height: 3.2rem;
+  outline: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  width: 90%;
+}
+.input-box{
+ padding:1rem 2rem 1rem 1rem;
+}
+
+.add{
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding:.3rem .6rem .3rem .6rem;
+}
+
+.flex2 button {
+  margin: 0.75rem;
+  height: 2rem;
+}
+
+ul {
+  padding: 2rem;
+}
+
+ul p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+li {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.padd {
+  padding-right: 1rem;
+}
+
+li {
+  padding: 0.7rem 1rem;
+  background: white;
+  font-size: 1.25rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  cursor: move;
+}
+li::after {
+  content: "Drag To Adjust";
+  font-size: 1rem;
+  position: absolute;
+  opacity: 0;
+  right: 110px;
+  transition: all 1s ease-in-out;
+}
+
+li:hover::after {
+  opacity: 1;
+}
+
+.over {
+  transform: scale(1.1, 1.1);
+}
+
+
+ i:hover{
+    cursor: pointer;
+}
